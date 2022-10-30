@@ -157,6 +157,35 @@ img {
                 }
             }
         }
+
+        .content {
+            width: 100%;
+            height: auto;
+
+            @include border-div();  
+
+            .menu {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+
+                .m-ul {
+                    list-style: none;
+                    margin: 10px 0px 0px 10px;
+                    height: auto;
+                    .m-li {
+                        // display: ;
+                        width: 15px;
+                        height: 15px;
+
+                        span {
+                            font-size: small;
+                            padding-left: 20px;
+                        }                    
+                    }
+                }
+            }
+        }
         
     }    
 }
@@ -223,7 +252,7 @@ img {
                         }
                         p {
                             margin-top: 5px;
-                            font-size: clamp(.3em,.4em + 1vw,1.2em);
+                            font-size: clamp(.3em,.3em + 1vw,1em);
                         }
                     }
 

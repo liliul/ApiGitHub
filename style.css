@@ -117,6 +117,31 @@ img {
     color: var(--bg-cards);
     font-weight: var(--bold);
   }
+  .container .content {
+    width: 100%;
+    height: auto;
+    border-radius: 19px;
+    background: var(--bg-cards);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  .container .content .menu {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .container .content .menu .m-ul {
+    list-style: none;
+    margin: 10px 0px 0px 10px;
+    height: auto;
+  }
+  .container .content .menu .m-ul .m-li {
+    width: 15px;
+    height: 15px;
+  }
+  .container .content .menu .m-ul .m-li span {
+    font-size: small;
+    padding-left: 20px;
+  }
 }
 @media screen and (min-width: 451px) {
   .container {
@@ -168,7 +193,7 @@ img {
   }
   .container .head .user-info .info-rede .bio p {
     margin-top: 5px;
-    font-size: clamp(0.3em, 0.4em + 1vw, 1.2em);
+    font-size: clamp(0.3em, 0.3em + 1vw, 1em);
   }
   .container .head .user-info .info-rede .links {
     display: flex;
