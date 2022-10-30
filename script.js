@@ -8,11 +8,18 @@ const linkBlog = document.querySelector('#link-blog')
 const local = document.querySelector('#local')
 const company = document.querySelector('#company')
 const twitter = document.querySelector('#twitter')
+const followers = document.querySelector('#followers')
+const following = document.querySelector('#following')
+const reposPublic = document.querySelector('#repo-public')
+const gistsPublic = document.querySelector('#gists-public')
+
+
 
 let http = 'https://'
 let httptwiter = `${http}twitter.com/`
 
-fetch('https://api.github.com/users/maykbrito')
+const username = 'diego3g'
+fetch(`https://api.github.com/users/${username}`)
     .then((response) => response.json())
     .then((data) =>  {
 
@@ -21,6 +28,7 @@ fetch('https://api.github.com/users/maykbrito')
         avatar.src = data.avatar_url
 
         linkGithub.href = data.html_url
+        bio.innerText = data.bio
 
         const bloglink = data.blog
         linkBlog.href = `${http}${bloglink}`
@@ -32,6 +40,11 @@ fetch('https://api.github.com/users/maykbrito')
         twitter.innerText = data.twitter_username
         twitter.href = `${httptwiter}${twitterlink}`
         
-        bio.innerText = data.bio
+        followers.innerText = data.followers
+        following.innerText = data.following
+
+        reposPublic.innerText = data.public_repos
+        gistsPublic.innerText = data.public_gists
+        
         // upda.innerText = data.updated_at
     })

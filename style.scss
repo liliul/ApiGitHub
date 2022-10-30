@@ -42,6 +42,10 @@ img {
     overflow: hidden;
     object-fit: fill;
 }
+a {
+    color: inherit;
+    text-decoration: none;
+}
 
 @mixin border-div(){
     border-radius: 19px;
@@ -125,6 +129,7 @@ img {
 
 
 
+
             .skills-user {
                 @include border-div();
 
@@ -162,25 +167,29 @@ img {
             width: 100%;
             height: auto;
 
-            @include border-div();  
-
+            display: flex;
+            flex-direction: column;
+            
             .menu {
-                width: 100%;
+                @include border-div();  
+                max-width: 450px;
                 height: auto;
                 padding: 10px;
-
+                display: flex;
+                padding: 30px;
+                margin: 20px;
                 .m-ul {
+                   
                     list-style: none;
-                    margin: 10px 0px 0px 10px;
+                    
                     height: auto;
                     .m-li {
-                        // display: ;
-                        width: 15px;
-                        height: 15px;
+                        display: flex;
+                        margin: 10px 0px;
 
-                        span {
+                        .text {
                             font-size: small;
-                            padding-left: 20px;
+                            padding-left: 15px;
                         }                    
                     }
                 }
@@ -308,6 +317,50 @@ img {
                 }
             }
         }
+
+
+
+
+
+
+        .content {
+            width: 100%;
+            height: auto;
+
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            
+            .menu {
+                @include border-div();  
+                max-width: 250px;
+                height: auto;
+                display: flex;
+                padding: 30px;
+                // margin: 20px;
+
+                .m-ul {
+                
+                    list-style: none;
+                    
+                    height: auto;
+                    .m-li {
+                        display: flex;
+                        margin: 10px 0px;
+
+                        .text {
+                            font-size: small;
+                            padding-left: 15px;
+                        }                    
+                    }
+                }
+            }
+        }
+
     }
+
+
+
+
 
 }
