@@ -18,7 +18,7 @@ const gistsPublic = document.querySelector('#gists-public')
 let http = 'https://'
 let httptwiter = `${http}twitter.com/`
 
-const username = 'diego3g'
+const username = 'maykbrito'
 fetch(`https://api.github.com/users/${username}`)
     .then((response) => response.json())
     .then((data) =>  {
@@ -47,4 +47,39 @@ fetch(`https://api.github.com/users/${username}`)
         gistsPublic.innerText = data.public_gists
         
         // upda.innerText = data.updated_at
+})
+
+
+// buscar dados da api do github users repos
+const cards = document.querySelector('#cards')
+
+let nomehub = 'maykbrito'
+let url = `https://api.github.com/users/${nomehub}/repos` 
+fetch(url)
+  .then((response) => response.json())
+  .then((grepos) => {
+    //   console.log('grepos', grepos)
+      // post.innerHTML = grepos.name
+      
+    grepos.map(list => {
+        const h1 = document.createElement('h1')
+        const aa = document.createElement('a')
+        const article = document.createElement('article')
+
+        // article.setAttribute('id', list.id)
+        article.classList.add('card')
+        aa.setAttribute('id', list.id)
+        // h1.setAttribute('id', list.id)
+        aa.href = list.html_url
+        h1.innerHTML = list.name
+        // let aa = list.html_url
+
+        cards.appendChild(aa)
+        aa.appendChild(article)
+        article.appendChild(h1)
+        // link.href = aa
+
     })
+    // cards.innerHTML = verRepos
+    // console.log('mapll',verRepos)
+})

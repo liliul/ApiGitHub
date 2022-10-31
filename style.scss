@@ -202,6 +202,26 @@ a {
                     }
                 }
             }
+
+
+
+            .cards-container {
+
+
+                .text-github {
+                    margin: 0px 20px 8px 20px;
+                    @include border-div();
+                    padding: 15px 30px;
+                    text-align: center;
+                    color: var(--bg-techs);
+                }
+
+                .card {
+                    @include border-div();
+                    padding: 30px;
+                    margin: 20px;
+                }
+            }
         }
         
     }    
@@ -336,13 +356,14 @@ a {
             height: auto;
 
             display: flex;
-            flex-direction: column;
+            
+            // flex-direction: column;
             margin-top: 30px;
             
             .menu {
                 @include border-div();  
-                max-width: 250px;
-                height: auto;
+                width: 350px;
+                height: 340px;
                 display: flex;
                 padding: 30px;
                 // margin: 20px;
@@ -361,6 +382,29 @@ a {
                             padding-left: 15px;
                         }                    
                     }
+                }
+            }
+
+
+
+            .cards-container {
+                width: 100%;
+                height: auto;
+
+
+                .text-github {
+                    margin: 0px 20px 8px 20px;
+                    @include border-div();
+                    padding: 15px 30px;
+                    text-align: center;
+                    color: var(--bg-techs);
+                }
+
+                .card {
+                    // width: 100%;
+                    @include border-div();
+                    padding: 30px;
+                    margin: 0px 20px 20px 20px;
                 }
             }
         }

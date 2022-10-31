@@ -159,6 +159,22 @@ a {
     font-size: small;
     padding-left: 15px;
   }
+  .container .content .cards-container .text-github {
+    margin: 0px 20px 8px 20px;
+    border-radius: 19px;
+    background: var(--bg-cards);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+    text-align: center;
+    color: var(--bg-techs);
+  }
+  .container .content .cards-container .card {
+    border-radius: 19px;
+    background: var(--bg-cards);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: 20px;
+  }
 }
 @media screen and (min-width: 451px) {
   .container {
@@ -250,15 +266,14 @@ a {
     width: 100%;
     height: auto;
     display: flex;
-    flex-direction: column;
     margin-top: 30px;
   }
   .container .content .menu {
     border-radius: 19px;
     background: var(--bg-cards);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    max-width: 250px;
-    height: auto;
+    width: 350px;
+    height: 340px;
     display: flex;
     padding: 30px;
   }
@@ -273,6 +288,26 @@ a {
   .container .content .menu .m-ul .m-li .text {
     font-size: small;
     padding-left: 15px;
+  }
+  .container .content .cards-container {
+    width: 100%;
+    height: auto;
+  }
+  .container .content .cards-container .text-github {
+    margin: 0px 20px 8px 20px;
+    border-radius: 19px;
+    background: var(--bg-cards);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    padding: 15px 30px;
+    text-align: center;
+    color: var(--bg-techs);
+  }
+  .container .content .cards-container .card {
+    border-radius: 19px;
+    background: var(--bg-cards);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    margin: 0px 20px 20px 20px;
   }
 }
 
