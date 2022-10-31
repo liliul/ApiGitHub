@@ -10,7 +10,9 @@
     --body-bg-color: #22212C;
     --text-color: #837E9F;
     --bg-cards: #302F3D;
-    --bg-techs: #CB92B1;
+    // --bg-techs: #CB92B1;
+    --bg-techs: #75D7EC;
+    --text-p-skills: #000;
 
     /* Fonts */
 
@@ -33,6 +35,7 @@ body {
     background-color: var(--body-bg-color);
     font-family: var(--font-family);
     color: var(--text-color);
+    
 }
 
 // styles global
@@ -163,7 +166,7 @@ a {
                         p {
                             font-size: clamp(.1em,.3em + 1vw,.6em);
                             text-align: center;
-                            color: var(--bg-cards);
+                            color: var(--text-p-skills);
                             font-weight: var(--bold);
                         }
                     }
@@ -375,7 +378,8 @@ a {
                         p {
                             font-size: clamp(.2em,.3em + 1vw,.6em);
                             text-align: center;
-                            color: var(--bg-cards);
+                            color: var(--text-p-skills);
+                            
                             font-weight: var(--bold);
                         }
                     }
@@ -387,7 +391,7 @@ a {
 
 
 
-
+// inicio do main
         .content {
             width: 100%;
             height: auto;
@@ -422,7 +426,7 @@ a {
             }
 
 
-
+// inicio card
             .cards-container {
                 width: 100%;
                 height: auto;
@@ -445,7 +449,7 @@ a {
 
         }
 
-
+// inicio do footer
         .footer {
             width: 100%;
             height: auto;
@@ -470,21 +474,15 @@ a {
                    margin: 0 auto;
                     
 
-                a {
+                    a {
 
-                    .icon-img {
-                        width: 24px;
-                        height: 24px;
+                        .icon-img {
+                            width: 24px;
+                            height: 24px;
+                        }
                     }
-                }
                }
             }
         }
-    
     }
-
-
-
-
-
 }

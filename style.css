@@ -9,7 +9,8 @@
   --body-bg-color: #22212C;
   --text-color: #837E9F;
   --bg-cards: #302F3D;
-  --bg-techs: #CB92B1;
+  --bg-techs: #75D7EC;
+  --text-p-skills: #000;
   /* Fonts */
   --h1-font-size:1.5rem;
   --h2-font-size: 1.25rem;
@@ -127,7 +128,7 @@ a {
   .container .head .skills-user .skill .item-skills p {
     font-size: clamp(0.1em, 0.3em + 1vw, 0.6em);
     text-align: center;
-    color: var(--bg-cards);
+    color: var(--text-p-skills);
     font-weight: var(--bold);
   }
   .container .content {
@@ -283,7 +284,7 @@ a {
   .container .head .skills-user .skill .item-skills p {
     font-size: clamp(0.2em, 0.3em + 1vw, 0.6em);
     text-align: center;
-    color: var(--bg-cards);
+    color: var(--text-p-skills);
     font-weight: var(--bold);
   }
   .container .content {
