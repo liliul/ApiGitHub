@@ -393,7 +393,7 @@ a {
 
 
                 .text-github {
-                    margin: 0px 20px 8px 20px;
+                    margin: 0px 0px 8px 20px;
                     @include border-div();
                     padding: 15px 30px;
                     text-align: center;
@@ -404,7 +404,7 @@ a {
                     // width: 100%;
                     @include border-div();
                     padding: 30px;
-                    margin: 0px 20px 20px 20px;
+                    margin: 0px 0px 20px 20px;
                 }
             }
         }
