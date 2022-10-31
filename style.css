@@ -175,6 +175,30 @@ a {
     padding: 30px;
     margin: 20px;
   }
+  .container .footer {
+    width: 100%;
+    height: auto;
+  }
+  .container .footer .icon-rede {
+    border-radius: 19px;
+    background: var(--bg-cards);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin: 20px 20px 20px 20px;
+    padding: 30px;
+  }
+  .container .footer .icon-rede .text-footer {
+    text-align: center;
+    color: var(--bg-techs);
+    margin-bottom: 15px;
+  }
+  .container .footer .icon-rede .icons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .container .footer .icon-rede .icons a .icon-img {
+    width: 24px;
+    height: 24px;
+  }
 }
 @media screen and (min-width: 451px) {
   .container {
@@ -234,8 +258,8 @@ a {
     margin: 15px 0px 0px 30px;
   }
   .container .head .user-info .info-rede .links a .i-link {
-    width: 34px;
-    height: 34px;
+    width: 28px;
+    height: 28px;
   }
   .container .head .skills-user {
     margin-top: 0px;
@@ -294,7 +318,7 @@ a {
     height: auto;
   }
   .container .content .cards-container .text-github {
-    margin: 0px 0px 8px 20px;
+    margin: 0px 0px 20px 20px;
     border-radius: 19px;
     background: var(--bg-cards);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
@@ -308,6 +332,32 @@ a {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     padding: 30px;
     margin: 0px 0px 20px 20px;
+  }
+  .container .footer {
+    width: 100%;
+    height: auto;
+  }
+  .container .footer .icon-rede {
+    border-radius: 19px;
+    background: var(--bg-cards);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin: 40px 0px 5px 20px;
+    padding: 30px;
+  }
+  .container .footer .icon-rede .text-footer {
+    text-align: center;
+    color: var(--bg-techs);
+    margin-bottom: 15px;
+  }
+  .container .footer .icon-rede .icons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .container .footer .icon-rede .icons a .icon-img {
+    width: 24px;
+    height: 24px;
   }
 }
 
