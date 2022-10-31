@@ -42,6 +42,10 @@ a {
   text-decoration: none;
 }
 
+.numStyle {
+  color: var(--bg-techs);
+}
+
 @media screen and (max-width: 570px) {
   .container .head {
     max-width: 450px;

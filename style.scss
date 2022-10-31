@@ -46,6 +46,9 @@ a {
     color: inherit;
     text-decoration: none;
 }
+.numStyle {
+    color: var(--bg-techs);
+}
 
 @mixin border-div(){
     border-radius: 19px;
