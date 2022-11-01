@@ -12,7 +12,7 @@
     --bg-cards: #302F3D;
     // --bg-techs: #CB92B1;
     --bg-techs: #75D7EC;
-    --text-p-skills: #000;
+    --text-p-skills: #000000;
 
     /* Fonts */
 
@@ -35,7 +35,6 @@ body {
     background-color: var(--body-bg-color);
     font-family: var(--font-family);
     color: var(--text-color);
-    
 }
 
 // styles global
@@ -373,7 +372,7 @@ a {
                     .item-skills {
                         background-color: var(--bg-techs);
                         border-radius: 10px;
-                        padding: 3px 2px;
+                        padding: 5px 8px;
 
                         p {
                             font-size: clamp(.2em,.3em + 1vw,.6em);

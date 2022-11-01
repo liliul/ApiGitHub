@@ -10,7 +10,7 @@
   --text-color: #837E9F;
   --bg-cards: #302F3D;
   --bg-techs: #75D7EC;
-  --text-p-skills: #000;
+  --text-p-skills: #000000;
   /* Fonts */
   --h1-font-size:1.5rem;
   --h2-font-size: 1.25rem;
@@ -279,7 +279,7 @@ a {
   .container .head .skills-user .skill .item-skills {
     background-color: var(--bg-techs);
     border-radius: 10px;
-    padding: 3px 2px;
+    padding: 5px 8px;
   }
   .container .head .skills-user .skill .item-skills p {
     font-size: clamp(0.2em, 0.3em + 1vw, 0.6em);
