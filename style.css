@@ -85,12 +85,14 @@ a {
   }
   .container .head .user-info .nome-user h1 {
     font-size: medium;
+    color: var(--bg-techs);
   }
   .container .head .user-info .info-rede .bio {
     margin-top: 20px;
   }
   .container .head .user-info .info-rede .bio h2 {
     font-size: medium;
+    color: var(--bg-techs);
   }
   .container .head .user-info .info-rede .bio p {
     font-size: clamp(0.3em, 0.5em + 1vw, 1.4em);
@@ -113,6 +115,7 @@ a {
   }
   .container .head .skills-user h2 {
     font-size: medium;
+    color: var(--bg-techs);
   }
   .container .head .skills-user .skill {
     margin-top: 15px;
@@ -241,6 +244,7 @@ a {
     width: 100%;
     font-size: medium;
     text-align: center;
+    color: var(--bg-techs);
   }
   .container .head .user-info .info-rede .bio {
     max-width: 520px;
@@ -248,6 +252,7 @@ a {
   }
   .container .head .user-info .info-rede .bio h2 {
     font-size: medium;
+    color: var(--bg-techs);
   }
   .container .head .user-info .info-rede .bio p {
     margin-top: 5px;
@@ -269,6 +274,7 @@ a {
   }
   .container .head .skills-user h2 {
     font-size: medium;
+    color: var(--bg-techs);
   }
   .container .head .skills-user .skill {
     margin-top: 25px;
