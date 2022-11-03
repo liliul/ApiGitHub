@@ -10,7 +10,7 @@
     --body-bg-color: #22212C;
     --text-color: #837E9F;
     --bg-cards: #302F3D;
-    // --bg-techs: #CB92B1;
+    --bg-lang: #CB92B1;
     --bg-techs: #75D7EC;
     --text-p-skills: #000000;
 
@@ -225,6 +225,35 @@ a {
                     @include border-div();
                     padding: 30px;
                     margin: 20px;
+
+
+                    .s-desc {
+                        margin: 10px 0px;
+
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: var(--bg-techs);
+
+                            margin-right: 10px;
+                        }
+                    }
+                    .lang {
+
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: var(--bg-lang);
+
+                            margin-right: 10px;
+                        }
+                    }
                 }
             }
 
@@ -452,6 +481,42 @@ a {
                     @include border-div();
                     padding: 30px;
                     margin: 0px 0px 20px 20px;
+
+                    &:hover {
+                        transform: scale(1.1);
+                        background-color: #464658;
+                        color:#75D7EC;
+                        font-weight: var(--bold);
+                    }
+
+
+                    .s-desc {
+                        margin: 10px 0px;
+
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: var(--bg-techs);
+
+                            margin-right: 10px;
+                        }
+                    }
+                    .lang {
+
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: var(--bg-lang);
+
+                            margin-right: 10px;
+                        }
+                    }
                 }
             }
 

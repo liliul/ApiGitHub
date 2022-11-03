@@ -58,30 +58,34 @@ let url = `https://api.github.com/users/${nomehub}/repos`
 fetch(url)
   .then((response) => response.json())
   .then((grepos) => {
-    //   console.log('grepos', grepos)
-      // post.innerHTML = grepos.name
+   
       
     grepos.map(list => {
         const h1 = document.createElement('h1')
-        const aa = document.createElement('a')
+        const htmlUrl = document.createElement('a')
         const article = document.createElement('article')
+        const description = document.createElement('p')
+        const language = document.createElement('span')
 
-        // article.setAttribute('id', list.id)
+        htmlUrl.setAttribute('id', list.id)
+        htmlUrl.href = list.html_url
+
         article.classList.add('card')
-        aa.setAttribute('id', list.id)
-        // h1.setAttribute('id', list.id)
-        aa.href = list.html_url
-        h1.innerHTML = list.name
-        // let aa = list.html_url
 
-        cards.appendChild(aa)
-        aa.appendChild(article)
+        h1.innerHTML = list.name
+        description.innerHTML = list.description
+        description.classList.add('s-desc')
+        language.innerHTML = list.language
+        language.classList.add('lang')
+
+        cards.appendChild(htmlUrl)
+        htmlUrl.appendChild(article)
         article.appendChild(h1)
-        // link.href = aa
+        article.appendChild(description)
+        article.appendChild(language)
 
     })
-    // cards.innerHTML = verRepos
-    // console.log('mapll',verRepos)
+   
 })
 
 

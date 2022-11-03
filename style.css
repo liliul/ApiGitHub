@@ -9,6 +9,7 @@
   --body-bg-color: #22212C;
   --text-color: #837E9F;
   --bg-cards: #302F3D;
+  --bg-lang: #CB92B1;
   --bg-techs: #75D7EC;
   --text-p-skills: #000000;
   /* Fonts */
@@ -179,6 +180,27 @@ a {
     padding: 30px;
     margin: 20px;
   }
+  .container .content .cards-container .card .s-desc {
+    margin: 10px 0px;
+  }
+  .container .content .cards-container .card .s-desc::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--bg-techs);
+    margin-right: 10px;
+  }
+  .container .content .cards-container .card .lang::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--bg-lang);
+    margin-right: 10px;
+  }
   .container .footer {
     width: 100%;
     height: auto;
@@ -339,6 +361,33 @@ a {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     padding: 30px;
     margin: 0px 0px 20px 20px;
+  }
+  .container .content .cards-container .card:hover {
+    transform: scale(1.1);
+    background-color: #464658;
+    color: #75D7EC;
+    font-weight: var(--bold);
+  }
+  .container .content .cards-container .card .s-desc {
+    margin: 10px 0px;
+  }
+  .container .content .cards-container .card .s-desc::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--bg-techs);
+    margin-right: 10px;
+  }
+  .container .content .cards-container .card .lang::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--bg-lang);
+    margin-right: 10px;
   }
   .container .footer {
     width: 100%;
