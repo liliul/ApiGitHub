@@ -46,7 +46,6 @@ fetch(`https://api.github.com/users/${username}`)
         reposPublic.innerText = data.public_repos
         gistsPublic.innerText = data.public_gists
         
-        // upda.innerText = data.updated_at
 })
 
 
@@ -61,7 +60,7 @@ fetch(url)
    
       
     grepos.map(list => {
-        const h1 = document.createElement('h1')
+        const nameRepo = document.createElement('h1')
         const htmlUrl = document.createElement('a')
         const article = document.createElement('article')
         const description = document.createElement('p')
@@ -72,7 +71,7 @@ fetch(url)
 
         article.classList.add('card')
 
-        h1.innerHTML = list.name
+        nameRepo.innerHTML = list.name
         description.innerHTML = list.description
         description.classList.add('s-desc')
         language.innerHTML = list.language
@@ -80,7 +79,7 @@ fetch(url)
 
         cards.appendChild(htmlUrl)
         htmlUrl.appendChild(article)
-        article.appendChild(h1)
+        article.appendChild(nameRepo)
         article.appendChild(description)
         article.appendChild(language)
 
