@@ -192,13 +192,17 @@ a {
     background-color: var(--bg-techs);
     margin-right: 10px;
   }
+  .container .content .cards-container .card .lang {
+    color: var(--bg-lang);
+    font-size: var(--normal-font-size);
+  }
   .container .content .cards-container .card .lang::before {
     content: "";
     display: inline-block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: var(--bg-lang);
+    background-color: var(--bg-techs);
     margin-right: 10px;
   }
   .container .footer {
@@ -380,13 +384,17 @@ a {
     background-color: var(--bg-techs);
     margin-right: 10px;
   }
+  .container .content .cards-container .card .lang {
+    color: var(--bg-lang);
+    font-size: var(--normal-font-size);
+  }
   .container .content .cards-container .card .lang::before {
     content: "";
     display: inline-block;
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: var(--bg-lang);
+    background-color: var(--bg-techs);
     margin-right: 10px;
   }
   .container .footer {

@@ -18,7 +18,7 @@ const gistsPublic = document.querySelector('#gists-public')
 let http = 'https://'
 let httptwiter = `${http}twitter.com/`
 
-const username = 'maykbrito'
+const username = 'diego3g'
 fetch(`https://api.github.com/users/${username}`)
     .then((response) => response.json())
     .then((data) =>  {
@@ -53,7 +53,7 @@ fetch(`https://api.github.com/users/${username}`)
 // buscar dados da api do github users repos
 const cards = document.querySelector('#cards')
 
-let nomehub = 'maykbrito'
+let nomehub = 'diego3g'
 let url = `https://api.github.com/users/${nomehub}/repos` 
 fetch(url)
   .then((response) => response.json())
