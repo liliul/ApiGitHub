@@ -19,6 +19,7 @@ let http = 'https://'
 let httptwiter = `${http}twitter.com/`
 
 const username = 'diego3g'
+
 fetch(`https://api.github.com/users/${username}`)
     .then((response) => response.json())
     .then((data) =>  {
@@ -66,7 +67,7 @@ fetch(url)
         const description = document.createElement('p')
         const language = document.createElement('span')
 
-        htmlUrl.setAttribute('id', list.id)
+        
         htmlUrl.href = list.html_url
 
         article.classList.add('card')
